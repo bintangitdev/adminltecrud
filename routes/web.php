@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeControllers;
-use App\Http\Controllers\UserControllers;
+use App\Http\Controllers\PengalamanController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +34,6 @@ Route::resource('users', \App\Http\Controllers\UserController::class)
     ->middleware('auth');
 
 Route::resource('employees', EmployeeControllers::class);
+
+Route::resource('experience', PengalamanController::class);
+//Route::apiResource('experience', App\Http\Controllers\Api\PostController::class);

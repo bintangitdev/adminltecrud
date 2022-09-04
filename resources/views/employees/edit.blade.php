@@ -4,8 +4,9 @@
     <h1 class="m-0 text-dark">Tambah User</h1>
 @stop
 @section('content')
-    <form action="{{route('employees.store')}}" method="post">
+    <form action="{{ route('employees.update', $employees->id) }}" method="post">
         @csrf
+        @method('PUT')
     <div class="row">
         <div class="col-12">
             <div class="card">

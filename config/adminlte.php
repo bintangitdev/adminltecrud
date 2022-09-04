@@ -283,6 +283,11 @@ return [
             'icon'  => 'fa fa-book',
         ],
         [
+            'text' => 'Experience',
+            'url'  => '/experience',
+            'icon'  => 'fa fa-book',
+        ],
+        [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
